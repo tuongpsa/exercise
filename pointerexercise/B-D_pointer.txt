@@ -1,0 +1,51 @@
+-----1.----------
+char c = 'A', d = 'B';
+char* p1 = &c;
+char* p2 = &d;
+char* p3;
+dia chi cua c là 0x1234, dia chi cua d là 0x5678
+p3 = &d;
+cout << "*p3 = " << *p3 << ", p3 = " << p3 << endl;   *p3 = B, p3 = 0x5678
+p3 = p1;
+cout << "*p3 = " << *p3 << ", p3 = " << p3 << endl;   *p3 = A, p3 = 0x1234
+*p1 = *p2;
+cout << "*p1 = " << *p1 << ", p1 = " << p1 << endl;   *p1 = B, p1 = 0x1234
+ 
+OUTPUT:
+*p3 = B, p3 = 0x5678
+*p3 = A, p3 = 0x1234
+*p1 = B, p1 = 0x1234
+
+
+
+--------2.-----------
+Cho các lệnh sau.
+int *p;
+int i;
+int k;
+i = 4;
+k = i;
+p = &i;
+(Những) lệnh nào trong số các lệnh dưới đây sẽ gán cho i giá trị 5?
+k = 5; không
+*k = 5;không
+p = 5; không
+*p = 5;gán được
+
+
+-------3.--------
+Giải thích lỗi sau:
+char c = 'C';
+double *p = &c;
+xảy ra lỗi không tương thích kiểu dữ liệu vì c có kiểu dữ liệu là char nhưng khi khai báo con trỏ p lại khai báo con trỏ có kiểu dữ liệu là double;
+
+--------------------------------------------------------
+Phần D:
+    1:ii
+    2:iii
+    3:iii
+    4:ii,iii
+    5:iv
+    6:i
+    7:iii
+    
