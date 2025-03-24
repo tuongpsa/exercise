@@ -10,7 +10,7 @@ int strlen(char* a){
 }
 void truncate(char a[], int n)
 {
-    //if (n < 0) return;
+    if (n < 0) return;
 int    len=strlen(a);
     char* p1=a+len-1;
     while(len>n){

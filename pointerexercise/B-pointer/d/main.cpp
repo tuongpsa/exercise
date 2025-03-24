@@ -8,6 +8,7 @@ return len;
 
 void pad_left(char a[], int n)
 {
+    if (n <= strlen(a)) return;
     int len=strlen(a);
     char* p1=a+len;
     char* p2=a+n;
