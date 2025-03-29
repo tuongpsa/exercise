@@ -1,0 +1,17 @@
+Thuật toán bubble sort O(N^2)
+-Duyệt từ đầu đến cuối mảng nhiều lần
+-so sánh các cặp phần từ cạnh nhau
+-nếu phần tử trước lớn hơn phần tử sau thì hoán đổi vị trí
+-sau mỗi vòng for,phần tử lớn nhất sẽ nổi ở cuối dãy
+
+for(int i=0;i<n-1;i++){
+	for(int j=0;j<n-i-1;j++){
+if(a[j]>a[j+1]) swap(a[j],a[j+1]);
+}
+}
+Nhược điểm:
++độ phức tạp O(N^2) chậm nếu n lớn
++có nhiều phép hoán đổi hơn so với sắp xếp chèn và sắp xếp chọn
+Ưu điểm:
++dễ cài đặt,dễ hiểu
++có phương pháp tối ưu bằng Optimized Bubble Sort.
